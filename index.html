@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello :)</title>
+      <link rel="icon" href="https://icon-library.com/images/cute-icon-png/cute-icon-png-22.jpg" type="image/icon type">
+    <link rel="stylesheet" href="fun.css">
+  </head>
+  <body title="краще наведи на кота">
+    <h1>Давай погуляємо?</h1>
+
+    <img src="https://i.pinimg.com/originals/b6/ea/0e/b6ea0e7792936be304459a4d7cd650c2.gif" alt="WHERES THE PICTURE?" title="вазон не смачний">
+<div class="b">
+    <button id="b1">Ні</button>
+    <button id="b2" title="НАТИСКАЙ">Гаразд)</button>
+</div>
+<script>
+const button1 = document.getElementById('b1');
+let left = 0;
+button1.addEventListener('mouseover', function() {
+  if(left == 0){
+    left = 6;
+  }else{
+    left = 0;
+  }
+  this.style.left = left + '%';
+});
+button1.addEventListener('click', function() {
+  if(left == 0){
+    left = 6;
+  }else{
+    left = 0;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('b2').addEventListener('click', function() {
+alert('ДЯКУЮ, МЕНІ ПРИЄМНО! :)');
+});
+</script>
+</body>
+</html>
